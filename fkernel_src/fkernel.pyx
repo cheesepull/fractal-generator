@@ -59,5 +59,3 @@ cdef inline void pow_c(double *z_real, double *z_imag, double w_real, double w_i
 
     z_real[0] = exp(pow_e) * cos(theta)
     z_imag[0] = exp(pow_e) * sin(theta)
-
-# cpdef void mandelbrot_comp(int[:, :] fba, int res_x, int res_y, int max_iter, double center_x, double center_y, double zoom, double w_real, double w_imag):
