@@ -1,3 +1,3 @@
 A simple mandelbrot set explorer.
 
-![GIF](video.gif)
+<img src="video.gif" width="600" alt="Описание">
