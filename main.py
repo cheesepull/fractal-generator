@@ -97,8 +97,8 @@ class FractalViewer(QtWidgets.QMainWindow):
 
 
     def _extent(self):
-        half_h = 1.0 / self.zoom                 # ±1/zoom по мнимой оси
-        half_w = half_h * RES_X / RES_Y          # пропорционально по вещественной
+        half_h = 1.0 / self.zoom                 
+        half_w = half_h * RES_X / RES_Y         
         return (self.center_x - half_w,
                 self.center_y - half_h,
                 2.0 * half_w,
@@ -164,7 +164,6 @@ class FractalViewer(QtWidgets.QMainWindow):
         else:
             super().keyPressEvent(ev)
 
-# nvm what was happening before the code is shit
 def main():
     app = QtWidgets.QApplication(sys.argv)
     viewer = FractalViewer()
